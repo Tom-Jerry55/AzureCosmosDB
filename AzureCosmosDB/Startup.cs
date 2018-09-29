@@ -60,9 +60,20 @@ namespace AzureCosmosDB
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            var res = CosmosDBDefinitions.Initialize();
+
+            //var result = SampleServices.CreateStoredProcedure("bulkUpdate");
+            //result.Wait();
+
+            //SampleServices.getData();
+
+            var res = SampleServices.BulkUpdate();
             res.Wait();
-            CosmosDBDefinitions.getData();
+            SampleServices.getData();
+
+
+            //var result = SampleServices.DeleteStoredProcedureAsync();
+            //result.Wait();
+            //SampleServices.viewStoredProcedure();
         }
     }
 }

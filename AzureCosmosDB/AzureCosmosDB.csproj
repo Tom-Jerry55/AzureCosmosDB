@@ -6,7 +6,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="MvcControlsToolkit.Business.DocumentDB" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
 </Project>
